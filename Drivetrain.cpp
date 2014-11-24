@@ -22,8 +22,8 @@ void Drivetrain::disable() {
 void Drivetrain::update() {
 	switch (state) {
 	case ON:
-		leftSpeed = std::min(std::max(linear - curvy, 1.0), -1.0);
-		rightSpeed = std::min(std::max(linear + curvy, 1.0), -1.0);
+		leftSpeed = max(min(linear - curvy, 1.0), -1.0);
+		rightSpeed = max(min(linear + curvy, 1.0), -1.0);
 		set();
 		break;
 	case OFF:

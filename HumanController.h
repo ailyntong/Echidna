@@ -1,7 +1,8 @@
-#include "Robot.h"
-
 #ifndef HUMANCONTROLLER_H
 #define HUMANCONTROLLER_H
+
+#include "Robot.h"
+#include "WPILib.h"
 
 class HumanController {
 public:
